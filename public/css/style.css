@@ -1,0 +1,25 @@
+
+.app-title, .col-title {
+   margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.col-title {
+  padding-bottom: 10px;
+  border-bottom: solid black 1px;
+}
+
+.burger-input {
+  height: 8em;
+}
+
+.burger-row {
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+
+ul, li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

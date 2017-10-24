@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 to-eat">
+      <h2 class="text-center col-title">Burgers To Eat</h2>
+      <ul class="container">
+        {{#each burgers}}
+          {{#unless devoured}}
+            <div class="row burger-row">
+              {{> burgers/burger-block}}
+              <button class="change-devoured btn btn-success btn-sm col-4" data-id="{{id}}" data-devoured ="{{devoured}}">
+                Eat Burger!
+              </button>
+            </div>
+          {{/unless}}
+        {{/each}}
+      </ul>
+    </div>
+    <div class="col-md-4 inputs">
+      <h2 class="text-center col-title">Add A New Burger</h2>
+      <form class="container">
+        <div class="form-group row justify-content-center">
+          <label class="col-form-label " for="burgerInput">What new burger would you like to add?</label>
+          <input type="text" class="form-control burger-input" id="burgerInput" placeholder="burger name">
+        </div>
+        <div class="row justify-content-end">
+          <button id="addButton" class="btn btn-success">Add Burger</button>
+        </div>
+
+      </form>
+    </div>
+    <div class="col-md-4 devoured">
+      <h2 class="text-center col-title">Burgers Devoured</h2>
+      <ul class="container">
+        {{#each burgers}}
+          {{#if devoured}}
+            <div class="row burger-row">
+              {{> burgers/burger-block}}
+            </div>
+          {{/if}}
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</div>
