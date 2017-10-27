@@ -7,7 +7,7 @@
           {{#unless devoured}}
             <div class="row burger-row">
               {{> burgers/burger-block}}
-              <button class="change-devoured btn btn-success btn-sm col-4" data-id="{{id}}" data-devoured ="{{devoured}}">
+              <button class="change-devoured btn btn-danger btn-sm col-4" data-id="{{id}}" data-devoured ="{{devoured}}">
                 Eat Burger!
               </button>
             </div>
@@ -23,7 +23,7 @@
           <input type="text" class="form-control burger-input" id="burgerInput" placeholder="burger name">
         </div>
         <div class="row justify-content-end">
-          <button id="addButton" class="btn btn-success">Add Burger</button>
+          <button id="addButton" class="btn btn-danger">Add Burger</button>
         </div>
 
       </form>

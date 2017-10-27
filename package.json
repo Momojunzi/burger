@@ -4,6 +4,8 @@
   "description": "burger app",
   "main": "server.js",
   "scripts": {
+    "mysql-import": "mysql -h127.0.0.1 -uroot < schema.sql",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
